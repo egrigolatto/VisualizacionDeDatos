@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APIs JSON AJAX</title>
+    <style>
+        body {
+          text-align: center;
+          font-family: "Helvetica", sans-serif;
+        }
+        h1 {
+          font-size: 2em;
+          font-weight: bold;
+        }
+        .box {
+          border-radius: 5px;
+          background-color: #eee;
+          padding: 20px 5px;
+        }
+        button {
+          color: white;
+          background-color: #4791d0;
+          border-radius: 5px;
+          border: 1px solid #4791d0;
+          padding: 5px 10px 8px 10px;
+        }
+        button:hover {
+          background-color: #0F5897;
+          border: 1px solid #0F5897;
+        }
+
+        /* ------------ */
+        body {
+        text-align: center;
+        font-family: "Helvetica", sans-serif;
+        }
+        h1 {
+        font-size: 2em;
+         font-weight: bold;
+        }
+        .box {
+         border-radius: 5px;
+         background-color: #eee;
+         padding: 20px 5px;
+        }
+        button {
+         color: white;
+         background-color: #4791d0;
+         border-radius: 5px;
+         border: 1px solid #4791d0;
+         padding: 5px 10px 8px 10px;
+       }
+       button:hover {
+        background-color: #0F5897;
+        border: 1px solid #0F5897;
+        }
+    </style>
+</head>
+<body>
+    <h1>APIs JSON AJAX</h1>
+
+    <!-- <h1>Cat Photo Finder</h1>
+    <p class="message box">
+       The message will go here
+    </p>
+   <p>
+     <button id="getMessage">
+      Get Message
+     </button>
+    </p> -->
+
+    <!-- <h4>You are here:</h4>
+    <div id="data">
+
+     </div> -->
+
+     <!-- <h1>Cat Friends</h1>
+     <p class="message box">
+      Reply from Server will be here
+     </p>
+     <p>
+     <label for="name">Your name:
+    <input type="text" id="name"/>
+     </label>
+     <button id="sendMessage">
+     Send Message
+    </button>
+    </p> -->
+
+
+
+    <script>
+    // Maneja los eventos de clic con JavaScript usando la propiedad onclick
+    // document.addEventListener('DOMContentLoaded', function(){
+        // DOMCOntentLoaded espera que se cargue todo el dom y ejecuta el codigo
+        // document.getElementById('getMessage').onclick = function(){
+            // Cambia texto con eventos de clic
+            // document.getElementsByClassName('message')[0].textContent="Here is the message";
+
+            // Obtén JSON con el método XMLHttpRequest JavaScript
+            // const req = new XMLHttpRequest();
+            // req.open("GET",'/json/cats.json',true);
+            // req.send();
+            // req.onload = function(){
+            // const json = JSON.parse(req.responseText);
+            // document.getElementsByClassName('message')[0].innerHTML = JSON.stringify(json);
+            
+            // Obtén JSON con el método fetch de JavaScript
+            // fetch('/json/cats.json')
+            //    .then(response => response.json())
+            //    .then(data => {
+            //     document.getElementById('message').innerHTML = JSON.stringify(data);
+            // })
+
+            // Accede a los datos JSON desde una API
+            // console.log(json[2].codeNames[1]);
+
+            // Convierte datos JSON a HTML
+            // let html = "";
+            // json.forEach(function(val) {
+            //   const keys = Object.keys(val);
+            //   html += "<div class = 'cat'>";
+            //   keys.forEach(function(key) {
+            //     html += "<strong>" + key + "</strong>: " + val[key] + "<br>";
+            //   });
+            //   html += "</div><br>";
+            // });
+
+            // Procesa imágenes desde fuentes de datos
+            // html += "<img src = '" + val.imageLink + "' " + "alt='" + val.altText + "'>";
+
+            // Pre-filtra JSON para obtener los datos que necesitas
+            // json = json.filter(function(val) {
+            //   return (val.id !== 1);
+            // });
+        // };
+    // }); 
+
+
+    // Obtén datos de geolocalización para encontrar las coordenadas GPS de un usuario
+    // if (navigator.geolocation){
+    //    navigator.geolocation.getCurrentPosition(function(position) {
+    //    document.getElementById('data').innerHTML="latitude: " + position.coords.latitude + "<br>longitude: " + position.coords.longitude;
+    //  });
+    // }
+
+    // Envía datos con el metodo XMLHttpRequest de JavaScript
+//     document.addEventListener('DOMContentLoaded', function(){
+//     document.getElementById('sendMessage').onclick = function(){
+
+//       const userName = document.getElementById('name').value;
+//       const url = 'https://jsonplaceholder.typicode.com/posts';
+//       // Agrega tu código debajo de esta línea
+//       const xhr = new XMLHttpRequest();
+//       xhr.open('POST', url, true);
+//       xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+//       xhr.onreadystatechange = function () {
+//       if (xhr.readyState === 4 && xhr.status === 201){
+//        const serverResponse = JSON.parse(xhr.response);
+//         document.getElementsByClassName('message')[0].textContent = serverResponse.userName + serverResponse.suffix;
+//       }
+//       };
+//       const body = JSON.stringify({ userName: userName, suffix: ' loves cats!' });
+//       xhr.send(body);
+//      };
+//   });
+
+
+    </script>
+</body>
+</html>
