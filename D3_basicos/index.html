@@ -33,49 +33,32 @@
       
 
     <script>
-    // Agrega elementos de documento con D3
+    // --> Agrega elementos de documento con D3
+
     //   d3.select("body")
     //     .append("h1")
     //     .text("Learning D3");
 
-    // Selecciona un grupo de elementos con D3
+    // --> Selecciona un grupo de elementos con D3
     // d3.selectAll("li")
     //   .text("list item")
 
-    // Trabaja con datos en D3
+    // constante que se va a usar en todos los ejemplos
     // const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
+
+    // --> Trabaja con datos en D3
+    
     // d3.select("body").selectAll("h2")
     //   .data(dataset)
     //   .enter()
     //   .append("h2")
-    //   .text("New Title");
-
+    //   .text("New Title"); // estaticos
     // Trabaja con datos dinámicos en D3
-    //    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
-    //    d3.select("body").selectAll("h2")
-    //      .data(dataset)
-    //      .enter()
-    //     .append("h2")
-    //     .text((d)=> (`${d} USD`));
-
+    //   .text((d)=> (`${d} USD`)); // dinamicos con una callback
     // Agrega elementos de estilización en línea
-    // const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
-    // d3.select("body").selectAll("h2")
-    //   .data(dataset)
-    //   .enter()
-    //   .append("h2")
-    //   .text((d) => (d + " USD"))
     //   .style("color","blue")
     //   .style("font-family","verdana")
-
     // Cambia estilos con base en los datos
-    // const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
-
-    // d3.select("body").selectAll("h2")
-    //   .data(dataset)
-    //   .enter()
-    //   .append("h2")
-    //   .text((d) => (d + " USD"))
     //   .style("color", (d) => {
     //     if (d < 20){
     //       return 'red'
@@ -84,55 +67,19 @@
     //       return 'green'
     //     }
     //   })
-
     // Agrega clases con D3
-    // const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
-
-    // d3.select("body").selectAll("div")
-    //   .data(dataset)
-    //   .enter()
-    //   .append("div")
     //   .attr("class", "bar");
-
     // Actualiza la altura de un elemento dinámicamente
-    // const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
-
-    // d3.select("body").selectAll("div")
-    //   .data(dataset)
-    //   .enter()
-    //   .append("div")
-    //   .attr("class", "bar")
     //   .style("height",(d)=> (
     //     `${d}px`
     //   ))
-
     // Cambia la presentación de un gráfico de barras
-    // const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
-
-    // d3.select("body").selectAll("div")
-    //   .data(dataset)
-    //   .enter()
-    //   .append("div")
-    //   .attr("class", "bar")
     //   .style("height",(d)=> (
     //     `${d*10}px`
     //   ))
 
-    // Aprende sobre SVG en D3
+    // --> Aprende sobre SVG en D3
     // const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
-
-    // const w = 500;
-    // const h = 100;
-
-    // const svg = d3.select("body")
-    //  svg.append("svg")
-    // .style("width",w)
-    // .style("height",h)
-
-    // Muestra formas con SVG
-
-    // const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
-
     // const w = 500;
     // const h = 100;
 
@@ -140,17 +87,14 @@
     //               .append("svg")
     //               .attr("width", w)
     //               .attr("height", h)
+    // Muestra formas con SVG
     //               .append("rect")
     //               .attr("width", 25)
     //               .attr("height",100)
     //               .attr("x",0)
     //               .attr("y",0);
 
-    // Crea una barra para cada punto de dato en el conjunto
-    // const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
-
-    // const w = 500;
-    // const h = 100;
+    // --> Crea una barra para cada punto de dato en el conjunto
 
     // const svg = d3.select("body")
     //               .append("svg")
@@ -161,126 +105,22 @@
     //    .data(dataset)
     //    .enter()
     //    .append("rect")
-
     // Establece dinámicamente las coordenadas para cada barra
-
-    // const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
-
-    // const w = 500;
-    // const h = 100;
-
-    // const svg = d3.select("body")
-    //               .append("svg")
-    //               .attr("width", w)
-    //               .attr("height", h);
-
-    // svg.selectAll("rect")
-    //    .data(dataset)
-    //    .enter()
-    //    .append("rect")
     //    .attr("x", (d, i) => {
     //      return i * 30
     //    })
     //    .attr("y", 0)
     //    .attr("width", 25)
     //    .attr("height", 100);
-
     // Cambia dinámicamente la altura de cada barra
-    // const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
-
-    // const w = 500;
-    // const h = 100;
-
-    // const svg = d3.select("body")
-    //               .append("svg")
-    //               .attr("width", w)
-    //               .attr("height", h);
-
-    // svg.selectAll("rect")
-    //    .data(dataset)
-    //    .enter()
-    //    .append("rect")
-    //    .attr("x", (d, i) => i * 30)
-    //    .attr("y", 0)
-    //    .attr("width", 25)
     //    .attr("height", (d, i) => {
     //      return d*3
     //    });
-
     // Invierte elementos SVG
-    // const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
-
-    // const w = 500;
-    // const h = 100;
-
-    // const svg = d3.select("body")
-    //               .append("svg")
-    //               .attr("width", w)
-    //               .attr("height", h);
-
-    // svg.selectAll("rect")
-    //    .data(dataset)
-    //    .enter()
-    //    .append("rect")
-    //    .attr("x", (d, i) => i * 30)
     //    .attr("y", (d, i) => h - 3 * d)
-    //      // Agrega tu código debajo de esta línea
- 
-
-
-    //      // Agrega tu código encima de esta línea
-      
-    //    .attr("width", 25)
-    //    .attr("height", (d, i) => 3 * d);
-
     // Cambia el color de un elemento SVG
-    // const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
-
-    // const w = 500;
-    // const h = 100;
-
-    // const svg = d3.select("body")
-    //               .append("svg")
-    //               .attr("width", w)
-    //               .attr("height", h);
-
-    // svg.selectAll("rect")
-    //    .data(dataset)
-    //    .enter()
-    //    .append("rect")
-    //    .attr("x", (d, i) => i * 30)
-    //    .attr("y", (d, i) => h - 3 * d)
-    //      // Agrega tu código debajo de esta línea
- 
-
-
-    //      // Agrega tu código encima de esta línea
-      
-    //    .attr("width", 25)
-    //    .attr("height", (d, i) => 3 * d);
     //    .attr("fill","navy")
-
     // Agrega etiquetas a elementos D3
-    // const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
-
-    // const w = 500;
-    // const h = 100;
-    
-    // const svg = d3.select("body")
-    //               .append("svg")
-    //               .attr("width", w)
-    //               .attr("height", h);
-    
-    // svg.selectAll("rect")
-    //    .data(dataset)
-    //    .enter()
-    //    .append("rect")
-    //    .attr("x", (d, i) => i * 30)
-    //    .attr("y", (d, i) => h - 3 * d)
-    //    .attr("width", 25)
-    //    .attr("height", (d, i) => 3 * d)
-    //    .attr("fill", "navy");
-    
     // svg.selectAll("text")
     //    .data(dataset)
     //    .enter()
@@ -290,26 +130,6 @@
     //    .text((d, i) => d);
 
     // Estiliza etiquetas D3
-    // const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
-
-    // const w = 500;
-    // const h = 100;
-
-    // const svg = d3.select("body")
-    //               .append("svg")
-    //               .attr("width", w)
-    //               .attr("height", h);
-
-    // svg.selectAll("rect")
-    //    .data(dataset)
-    //    .enter()
-    //    .append("rect")
-    //    .attr("x", (d, i) => i * 30)
-    //    .attr("y", (d, i) => h - 3 * d)
-    //    .attr("width", 25)
-    //    .attr("height", (d, i) => d * 3)
-    //    .attr("fill", "navy");
-
     // svg.selectAll("text")
     //    .data(dataset)
     //    .enter()
@@ -319,68 +139,14 @@
     //    .attr("y", (d, i) => h - (3 * d) - 3)
     //    .style("font-size","25")
     //    .style("fill","red")
-
     // Añade un efecto "Hover" a un elemento D3
-    // const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
-
-    // const w = 500;
-    // const h = 100;
-
-    // const svg = d3.select("body")
-    //               .append("svg")
-    //               .attr("width", w)
-    //               .attr("height", h);
-
     // svg.selectAll("rect")
-    //    .data(dataset)
-    //    .enter()
-    //    .append("rect")
-    //    .attr("x", (d, i) => i * 30)
-    //    .attr("y", (d, i) => h - 3 * d)
-    //    .attr("width", 25)
-    //    .attr("height", (d, i) => 3 * d)
-    //    .attr("fill", "navy")
     //    .attr("class","bar");
-    // svg.selectAll("text")
-    //    .data(dataset)
-    //    .enter()
-    //    .append("text")
-    //    .text((d) => d)
-    //    .attr("x", (d, i) => i * 30)
-    //    .attr("y", (d, i) => h - (3 * d) - 3);
-
     // Agrega un cuadro emergente a un elemento D3
-    // const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
-
-    // const w = 500;
-    // const h = 100;
-
-    // const svg = d3.select("body")
-    //               .append("svg")
-    //               .attr("width", w)
-    //               .attr("height", h);
-
-    // svg.selectAll("rect")
-    //    .data(dataset)
-    //    .enter()
-    //    .append("rect")
-    //    .attr("x", (d, i) => i * 30)
-    //    .attr("y", (d, i) => h - 3 * d)
-    //    .attr("width", 25)
-    //    .attr("height", (d, i) => 3 * d)
-    //    .attr("fill", "navy")
-    //    .attr("class","bar");
     //    .append("title")
     //    .text((d) => d)
-    // svg.selectAll("text")
-    //    .data(dataset)
-    //    .enter()
-    //    .append("text")
-    //    .text((d) => d)
-    //    .attr("x", (d, i) => i * 30)
-    //    .attr("y", (d, i) => h - (3 * d) - 3);
 
-    // Crea un diagrama de dispersión con círculos SVG
+// --> Crea un diagrama de dispersión con círculos SVG
 
 //     const dataset = [
 //                   [ 34,    78 ],
@@ -394,36 +160,6 @@
 //                   [ 78,    320 ],
 //                   [ 21,    123 ]
 //                 ];
-
-
-//     const w = 500;
-//     const h = 500;
-
-//     const svg = d3.select("body")
-//                   .append("svg")
-//                   .attr("width", w)
-//                   .attr("height", h);
-
-//     svg.selectAll("circle")
-//        .data(dataset)
-//   .enter()
-//   .append("circle")
-
-// Añade atributos a los elementos del círculo
-// const dataset = [
-//                   [ 34,    78 ],
-//                   [ 109,   280 ],
-//                   [ 310,   120 ],
-//                   [ 79,    411 ],
-//                   [ 420,   220 ],
-//                   [ 233,   145 ],
-//                   [ 333,   96 ],
-//                   [ 222,   333 ],
-//                   [ 78,    320 ],
-//                   [ 21,    123 ]
-//                 ];
-
-
 //     const w = 500;
 //     const h = 500;
 
@@ -436,58 +172,25 @@
 //        .data(dataset)
 //        .enter()
 //        .append("circle")
+// Añade atributos a los elementos del círculo
 //        .attr("cx", (d) => d[0])
 //        .attr("cy", (d) => h - d[1])
 //        .attr("r", 5)
-
-
 // Añade etiquetas a un diagrama de dispersión
-// const dataset = [
-//                   [ 34,    78 ],
-//                   [ 109,   280 ],
-//                   [ 310,   120 ],
-//                   [ 79,    411 ],
-//                   [ 420,   220 ],
-//                   [ 233,   145 ],
-//                   [ 333,   96 ],
-//                   [ 222,   333 ],
-//                   [ 78,    320 ],
-//                   [ 21,    123 ]
-//                 ];
-
-
-//     const w = 500;
-//     const h = 500;
-
-//     const svg = d3.select("body")
-//                   .append("svg")
-//                   .attr("width", w)
-//                   .attr("height", h);
-
-//     svg.selectAll("circle")
-//        .data(dataset)
-//        .enter()
-//        .append("circle")
-//        .attr("cx", (d, i) => d[0])
-//        .attr("cy", (d, i) => h - d[1])
-//        .attr("r", 5);
-
 //     svg.selectAll("text")
 //        .data(dataset)
 //        .enter()
 //        .append("text")
-//        // Agrega tu código debajo de esta línea
 //        .attr("x", (d) => d[0] + 5)
 //        .attr("y", (d) => h - d[1])
 //        .text((d) => (d[0] + ", " + d[1]))
 
-// Crea una escala lineal con D3
+// --> Crea una escala lineal con D3
 // const scale = d3.scaleLinear();
-//     const output = scale(50);
+// const output = scale(50);
 //     d3.select("body")
 //       .append("h2")
 //       .text(output);
-
 // Establece un dominio y un rango en una escala
 // const scale = d3.scaleLinear()
 //     .domain([250, 500])
@@ -496,7 +199,6 @@
 //     d3.select("body")
 //       .append("h2")
 //       .text(output);
-
 // Utiliza las funciones d3.max y d3.min para encontrar valores mínimos y máximos en un conjunto de datos
 // const positionData = [[1, 7, -4],[6, 3, 8],[2, 8, 3]]
 //     const output = d3.max(positionData, (d) => d[2]);
@@ -505,21 +207,6 @@
 //       .text(output)
 
 // Utiliza escalas dinámicas
-// const dataset = [
-//       [  34,   78 ],
-//       [ 109,  280 ],
-//       [ 310,  120 ],
-//       [  79,  411 ],
-//       [ 420,  220 ],
-//       [ 233,  145 ],
-//       [ 333,   96 ],
-//       [ 222,  333 ],
-//       [  78,  320 ],
-//       [  21,  123 ]
-//     ];
-    
-//     const w = 500;
-//     const h = 500;
     
 //     // Padding between the SVG canvas boundary and the plot
 //     const padding = 30;
@@ -540,21 +227,7 @@
 
 
 // Usa una escala predefinida para colocar elementos
-    // const dataset = [
-    //   [  34,  78 ],
-    //   [ 109, 280 ],
-    //   [ 310, 120 ],
-    //   [  79, 411 ],
-    //   [ 420, 220 ],
-    //   [ 233, 145 ],
-    //   [ 333,  96 ],
-    //   [ 222, 333 ],
-    //   [  78, 320 ],
-    //   [  21, 123 ]
-    // ];
-    
-    // const w = 500;
-    // const h = 500;
+  
     // const padding = 60;
     
     // const xScale = d3.scaleLinear()
@@ -587,21 +260,6 @@
     //   .attr("y", (d) => yScale(d[1]));
 
     // Agrega ejes a una visualización
-  
-    // const dataset = [
-    //               [ 34,     78 ],
-    //               [ 109,   280 ],
-    //               [ 310,   120 ],
-    //               [ 79,   411 ],
-    //               [ 420,   220 ],
-    //               [ 233,   145 ],
-    //               [ 333,   96 ],
-    //               [ 222,    333 ],
-    //               [ 78,    320 ],
-    //               [ 21,   123 ]
-    //             ];
-    // const w = 500;
-    // const h = 500;
     // const padding = 60;
     // const xScale = d3.scaleLinear()
     //                  .domain([0, d3.max(dataset, (d) => d[0])])
