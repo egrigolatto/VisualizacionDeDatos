@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grafica de barras</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div id="title">United States GDP</div>
+        <div class="visHolder"></div>
+      </div>
+    </div>
+    <style></style>
+
+    <!-- <script src="./app.js"></script> -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        let dataGrafic;
+
+        const urlAPI =
+          "https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/GDP-data.json";
+
+        fetch(urlAPI)
+          .then((response) => response.json())
+          .then((data) => {
+            // console.log(data);
+            dataGrafic = data;
+          });
+        setTimeout(() => {
+          console.log("data", dataGrafic);
+        }, 2000);
+
+        
+
+        // fin -----------------------------------
+      });
+
+      const visHolder = d3.select(".visHolder");
+      visHolder.append("h1").text("Learning D3");
+    </script>
+  </body>
+</html>
